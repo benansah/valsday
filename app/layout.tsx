@@ -21,7 +21,11 @@ export const metadata: Metadata = {
     images: ["/og.png"],
     type: "website"
   },
-  themeColor : "#8b0000"
+  themeColor : "#8b0000",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+  }
 };
 
 export default function RootLayout({
