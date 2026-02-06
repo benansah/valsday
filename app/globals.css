@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  height: 120vh;
+  height: 130vh;
   background: linear-gradient(135deg, #8b0000, #ff4d6d);
   font-family: "Georgia", serif;
   overflow: hidden;
@@ -19,7 +19,7 @@ body {
   position: fixed;
   inset: 0;
   background-image: url("/rose.png");
-  background-size: 300px;
+  background-size: 500px;
   opacity: 0.15;
   animation: float 25s linear infinite;
   z-index: -1;
