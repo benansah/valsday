@@ -31,7 +31,7 @@ export default function Home() {
 
     noRef.current.style.position = 'absolute';
     noRef.current.style.left = `${x}px`;
-    noRef.current.style.top = `${y-300}px`;
+    noRef.current.style.top = `${y - 300}px`;
 
     setStep((prev) => (prev < 2 ? prev + 1 : prev));
   };
