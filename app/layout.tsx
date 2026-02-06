@@ -20,7 +20,8 @@ export const metadata: Metadata = {
     description: "Life is short. So here goes nothing.",
     images: ["/og.png"],
     type: "website"
-  }
+  },
+  themeColor : "8b0000"
 };
 
 export default function RootLayout({

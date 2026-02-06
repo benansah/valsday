@@ -1,4 +1,9 @@
 @import "tailwindcss";
+
+/* :root {
+  background-color: #8b0000;
+} */
+
 body {
   margin: 0;
   height: 100vh;
@@ -58,9 +63,10 @@ body {
 
 .buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1.5rem;
   align-items: center;
+  justify-items: center;
   position: relative;
 }
 
@@ -73,6 +79,7 @@ body {
   font-weight: bold;
   transition: all 0.3s ease;
   min-width: 150px;
+  margin: auto;
 }
 
 .buttons button:hover {
@@ -82,6 +89,8 @@ body {
 .yes {
   background: #ff4d6d;
   color: white;
+  margin-left: 2rem;
+  padding: 2remw;
 }
 
 .yes:hover {
@@ -91,7 +100,7 @@ body {
 .no {
   background: #555;
   color: white;
-  position: absolute;
+  /* position: absolute; */
   transition: all 0.1s ease;
 }
 
