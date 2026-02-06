@@ -7,7 +7,7 @@ export default function Home() {
   const [step, setStep] = useState(0);
   const [name, setName] = useState("");
   const [started, setStarted] = useState(false);
-  const isMobile = typeof window !== 'undefined' && "ontouchstart" in window;
+  const isMobile = typeof window !== 'undefined' && "ontouchend" in window;
 
   const moveNo = () => {
     if (!noRef.current) return;
