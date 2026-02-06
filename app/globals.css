@@ -1,26 +1,112 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #8b0000, #ff4d6d);
+  font-family: "Georgia", serif;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+  background-image: url("/rose.png");
+  background-size: 300px;
+  opacity: 0.15;
+  animation: float 25s linear infinite;
+  z-index: -1;
+}
+
+@keyframes float {
+  from { background-position: 0 0; }
+  to { background-position: 1200px 1200px; }
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 4rem;
+  text-align: center;
+  color: white;
+  max-width: 700px;
+  width: 90%;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+  position: relative;
+}
+
+.intro {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sub {
+  font-size: 1.4rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.question {
+  font-size: 2.8rem;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  position: relative;
+}
+
+.buttons button {
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  min-width: 150px;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+}
+
+.yes {
+  background: #ff4d6d;
+  color: white;
+}
+
+.yes:hover {
+  background: #ff2d52;
+}
+
+.no {
+  background: #555;
+  color: white;
+  position: absolute;
+  transition: all 0.1s ease;
+}
+
+.no:hover {
+  background: #333;
+}
+
+.name-input {
+  padding: 1rem 1.2rem;
+  border-radius: 20px;
+  border: none;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
 }
