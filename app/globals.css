@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  height: 130vh;
+  height: 100vh;
   background: linear-gradient(135deg, #8b0000, #ff4d6d);
   font-family: "Georgia", serif;
   overflow: hidden;
@@ -19,7 +19,7 @@ body {
   position: fixed;
   inset: 0;
   background-image: url("/rose.png");
-  background-size: 500px;
+  background-size: 300px;
   opacity: 0.15;
   animation: float 25s linear infinite;
   z-index: -1;
@@ -33,7 +33,7 @@ body {
 .card {
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(12px);
-  border-radius: 20px;
+  border-radius: 50px;
   padding: 4rem;
   text-align: center;
   color: white;
@@ -71,8 +71,8 @@ body {
 }
 
 .buttons button {
-  padding: 1rem 2rem;
-  font-size: 1.4rem;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
   border: none;
   border-radius: 30px;
   cursor: pointer;

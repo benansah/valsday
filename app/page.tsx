@@ -38,16 +38,16 @@ export default function Home() {
 
   const yesClicked = () => {
     confetti({
-      particleCount: 250,
-      spread: 90,
+      particleCount: 350,
+      spread: 110,
       origin: { y: 0.6 }
     });
 
-    alert(
-      name
-        ? `Then it’s settled, ${name} ❤️`
-        : "Then it’s settled ❤️"
-    );
+    // alert(
+    //   name
+    //     ? `Then it’s settled, ${name} ❤️`
+    //     : "Then it’s settled ❤️"
+    // );
   };
 
   if (!started) {
